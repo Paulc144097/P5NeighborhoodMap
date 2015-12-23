@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+      
+#map {
+  height: 93.5%;
+}
+
+
+.style-1 input[type="text"] {
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+
+.s{
+  /*text-align: center;
+  display: inline-block;
+  width: 100%;*/
+  background-color: black;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 0px;
+}
