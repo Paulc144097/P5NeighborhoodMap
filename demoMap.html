@@ -8,19 +8,16 @@
     <link rel="stylesheet" type="text/css" href="MapStyles.css">
     <script type="text/javascript" src="knockout-3.4.0.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+
   </head>
 
   <body>
 
 
   	<ul class="input-list style-1 clearfix s">
-      <input type="text" placeholder="Filter...">
-      <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+      <input type="text" placeholder="City, State...">
+      <button class="btn btn-primary btn-sm" type="submit" data-bind="click: get-city">Submit</button>
   	</ul>  	
-
-
-
-
 
 
 
@@ -28,14 +25,10 @@
 
 	
 
-
 	<script type="text/javascript" src="Mapp.js"></script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSyvSHrP5UCJ7sTpJtPs843GTxkHFTD80&callback=initMap"
-  type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSyvSHrP5UCJ7sTpJtPs843GTxkHFTD80&callback=initMap" type="text/javascript"></script>
+    <script type="text/javascript" src='knockout-3.4.0.js'></script>
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
   </body>
-
-  
 </html>
