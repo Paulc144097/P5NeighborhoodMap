@@ -1,16 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-}
-      
-#map {
-  height: 93.5%;
-}
-
-
-.style-1 input[type="text"] {
+/*.style-1 input[type="text"] {
   padding: 5px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
@@ -20,13 +8,30 @@ html, body {
   border: solid 1px #707070;
   box-shadow: 0 0 5px 1px #969696;
 }
+*/
 
 
-.s{
-  /*text-align: center;
-  display: inline-block;
-  width: 100%;*/
-  background-color: black;
-  padding: 5px 5px 5px 5px;
-  margin-bottom: 0px;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+#map {
+  height: 100%;
+}
+
+#float-panel {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 8px;
+}
+

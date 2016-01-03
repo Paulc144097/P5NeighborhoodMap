@@ -12,18 +12,33 @@
   </head>
 
   <body>
+	
+<!-- class="searchbar input-list style-1 clearfix s" -->
+<!--   	<div  id="floating-panel">
+  			<input id="address" type="textbox" placeholder="City, State..." data-bind="value: searchLocation, selectOnFocus: true">
+      		<input id="submit" type="submit"  value="Submit" class="btn btn-primary btn-sm"></form> 
+  	</div> -->
+
+ 
+  	<div id="float-panel">
+  	<form data-bind="submit: processLocationSearch">
+  		<input type="text" placeholder="City, State..." data-bind="value: searchLOcation, selectIbFocus: true" id="autocomplete" autocomplete="off">
+  		<input type="submit" value="Submit" id="submit">
+  	</form>
+  	</div>
 
 
-  	<ul class="input-list style-1 clearfix s">
-      <input type="text" placeholder="City, State...">
-      <button class="btn btn-primary btn-sm" type="submit" data-bind="click: get-city">Submit</button>
-  	</ul>  	
 
 
 
     <div id="map"></div>
 
-	
+        <!-- 
+      <input id="address" type="textbox" value=", NSW">
+      <input id="submit" type="button" value="Geocode"> -->
+
+
+
 
 	<script type="text/javascript" src="Mapp.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSyvSHrP5UCJ7sTpJtPs843GTxkHFTD80&callback=initMap" type="text/javascript"></script>
@@ -32,3 +47,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+    <div id="floating-panel">
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+    <div id="map"></div>
+    
+
